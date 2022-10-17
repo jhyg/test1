@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 style = "margin-left:4.5%; margin-top:-10px;">A2</h1>
+        <h1 style = "margin-left:4.5%; margin-top:-10px;">A23</h1>
         <v-col style="margin-bottom:40px;">
             <div class="text-center">
                 <v-dialog
@@ -10,7 +10,7 @@
                         hide-overlay
                         transition="dialog-bottom-transition"
                 >
-                    <A2 :offline="offline" class="video-card" :isNew="true" :editMode="true" v-model="newValue" 
+                    <A23 :offline="offline" class="video-card" :isNew="true" :editMode="true" v-model="newValue" 
                             @add="append" v-if="tick"/>
 
                     <v-btn
@@ -33,7 +33,7 @@
             </div>
         </v-col>
         <v-row>
-            <A2 :offline="offline" class="video-card" v-for="(value, index) in values" v-model="values[index]" v-bind:key="index" @delete="remove"/>
+            <A23 :offline="offline" class="video-card" v-for="(value, index) in values" v-model="values[index]" v-bind:key="index" @delete="remove"/>
         </v-row>
     </div>
 </template>
@@ -41,12 +41,12 @@
 <script>
 
     const axios = require('axios').default;
-    import A2 from './../A2.vue';
+    import A23 from './../A23.vue';
 
     export default {
-        name: 'A2Manager',
+        name: 'A23Manager',
         components: {
-            A2,
+            A23,
         },
         props: {
             offline: Boolean
@@ -64,8 +64,8 @@
                 return;
             } 
 
-            var temp = await axios.get(axios.fixUrl('/a2s'))
-            me.values = temp.data._embedded.a2s;
+            var temp = await axios.get(axios.fixUrl('/a23s'))
+            me.values = temp.data._embedded.a23s;
             
             me.newValue = {
             }

@@ -8,8 +8,8 @@ Vue.use(Router);
 import AManager from "./components/listers/ACards"
 import ADetail from "./components/listers/ADetail"
 
-import A2Manager from "./components/listers/A2Cards"
-import A2Detail from "./components/listers/A2Detail"
+import A23Manager from "./components/listers/A23Cards"
+import A23Detail from "./components/listers/A23Detail"
 
 
 export default new Router({
@@ -28,14 +28,14 @@ export default new Router({
             },
 
             {
-                path: '/a2s',
-                name: 'A2Manager',
-                component: A2Manager
+                path: '/a23s',
+                name: 'A23Manager',
+                component: A23Manager
             },
             {
-                path: '/a2s/:id',
-                name: 'A2Detail',
-                component: A2Detail
+                path: '/a23s/:id',
+                name: 'A23Detail',
+                component: A23Detail
             },
 
 

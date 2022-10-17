@@ -46,7 +46,7 @@ const pluralCaseList = []
 
 pluralCaseList.push( {plural: "as", pascal: "A"} )
 
-pluralCaseList.push( {plural: "a2s", pascal: "A2"} )
+pluralCaseList.push( {plural: "a23s", pascal: "A23"} )
 
 
 Vue.prototype.$ManagerLists.forEach(function(item, idx) {

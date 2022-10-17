@@ -52,13 +52,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key="a2s"
-                        to="/a2s"
+                        key="a23s"
+                        to="/a23s"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        A2
+                        A23
                     </v-list-item>
 
 
@@ -132,16 +132,16 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="a2s"
-                                            to="/a2s"
+                                            key="a23s"
+                                            to="/a23s"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            A2
+                                            A23
                                         </v-btn>
                                     </template>
-                                    <span>A2</span>
+                                    <span>A23</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>

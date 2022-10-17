@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 import p.domain.*;
 
 @RestController
-// @RequestMapping(value="/as")
+// @RequestMapping(value="/a23s")
 @Transactional
-public class AController {
+public class A23Controller {
 
     @Autowired
-    ARepository aRepository;
+    A23Repository a23Repository;
 }

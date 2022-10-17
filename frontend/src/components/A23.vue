@@ -10,10 +10,10 @@
         </template>
 
         <v-card-title v-if="value._links">
-            A2 # {{value._links.self.href.split("/")[value._links.self.href.split("/").length - 1]}}
+            A23 # {{value._links.self.href.split("/")[value._links.self.href.split("/").length - 1]}}
         </v-card-title >
         <v-card-title v-else>
-            A2
+            A23
         </v-card-title >
 
         <v-card-text>
@@ -78,7 +78,7 @@
 
 
     export default {
-        name: 'A2',
+        name: 'A23',
         components:{
         },
         props: {
@@ -130,7 +130,7 @@
 
                     if(!this.offline) {
                         if(this.isNew) {
-                            temp = await axios.post(axios.fixUrl('/a2s'), this.value)
+                            temp = await axios.post(axios.fixUrl('/a23s'), this.value)
                         } else {
                             temp = await axios.put(axios.fixUrl(this.value._links.self.href), this.value)
                         }

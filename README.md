@@ -37,7 +37,7 @@ mvn spring-boot:run
 ```
 - b2
 ```
- http :8088/a2s id="id" 
+ http :8088/a23s id="id" 
 ```
 
 

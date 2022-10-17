@@ -31,7 +31,7 @@
     const axios = require('axios').default;
 
     export default {
-        name: 'A2Picker',
+        name: 'A23Picker',
         props: {
             value: [String, Object, Array, Number, Boolean],
         },
@@ -41,14 +41,14 @@
         }),
         async created() {
             var me = this;
-            var temp = await axios.get(axios.fixUrl('/a2s'))
+            var temp = await axios.get(axios.fixUrl('/a23s'))
             if(temp.data) {
-                me.list = temp.data._embedded.a2s;
+                me.list = temp.data._embedded.a23s;
             }
 
             if(me.value && typeof me.value == "object" && Object.values(me.value)[0]) {
                 var id = Object.values(me.value)[0];
-                var tmpValue = await axios.get(axios.fixUrl('/a2s/' + id))
+                var tmpValue = await axios.get(axios.fixUrl('/a23s/' + id))
                 if(tmpValue.data) {
                     var val = tmpValue.data
                     me.list.forEach(function(item, idx) {

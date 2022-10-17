@@ -1,7 +1,7 @@
 <template>
     <v-card outlined>
         <v-card-title>
-            A2 # {{item._links.self.href.split("/")[item._links.self.href.split("/").length - 1]}}
+            A23 # {{item._links.self.href.split("/")[item._links.self.href.split("/").length - 1]}}
         </v-card-title>
 
         <v-card-text>
@@ -51,7 +51,7 @@
     const axios = require('axios').default;
 
     export default {
-        name: 'A2Detail',
+        name: 'A23Detail',
         components:{},
         props: {
         },
@@ -62,7 +62,7 @@
         async created() {
             var me = this;
             var params = this.$route.params;
-            var temp = await axios.get(axios.fixUrl('/a2s/' + params.id))
+            var temp = await axios.get(axios.fixUrl('/a23s/' + params.id))
             if(temp.data) {
                 me.item = temp.data
             }

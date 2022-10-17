@@ -15,7 +15,7 @@ spring:
         - id: b2
           uri: http://localhost:8082
           predicates:
-            - Path=/a2s/**, 
+            - Path=/a23s/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -46,7 +46,7 @@ spring:
         - id: b2
           uri: http://b2:8080
           predicates:
-            - Path=/a2s/**, 
+            - Path=/a23s/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:
