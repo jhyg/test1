@@ -1,17 +1,19 @@
 package p.infra;
+import p.domain.*;
 
-import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.RepresentationModelProcessor;
 import org.springframework.stereotype.Component;
-import p.domain.*;
+import org.springframework.hateoas.EntityModel;
 
 @Component
-public class AHateoasProcessor
-    implements RepresentationModelProcessor<EntityModel<A>> {
+public class AHateoasProcessor implements RepresentationModelProcessor<EntityModel<A>>  {
 
     @Override
     public EntityModel<A> process(EntityModel<A> model) {
+
+        
         return model;
     }
+    
 }
